@@ -1,0 +1,7 @@
+Flask
+Pillow 
+Flask-CORS
+torch 
+transformers
+requests
+Gunicorn

@@ -1,0 +1,5 @@
+venv
+controlled-food-recipe-generation
+food-recipe-generation-dataset.csv
+py.txt
+__pycache

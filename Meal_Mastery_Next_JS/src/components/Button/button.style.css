@@ -1,0 +1,181 @@
+/* From Uiverse.io by LeonKohli */ 
+.button {
+    position: relative;
+    padding: 20px 50px;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 40px;
+    border: 2px solid #4caf50;
+    background-color: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition:
+      all 0.3s ease,
+      transform 0.1s ease;
+  }
+  
+  .text {
+    position: relative;
+    z-index: 2;
+    transition: all 0.3s ease;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.7);
+  }
+  
+  .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 200px;
+    height: 200px;
+    background: #4caf50;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
+    transition: 0.5s ease;
+  }
+  
+  .liquid::before,
+  .liquid::after {
+    content: "";
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+  }
+  
+  .liquid::before {
+    border-radius: 45%;
+    background: rgba(20, 20, 20, 0.8);
+    animation: rotate 5s linear infinite;
+  }
+  
+  .liquid::after {
+    border-radius: 40%;
+    background: rgba(20, 20, 20, 0.3);
+    animation: rotate 10s linear infinite;
+  }
+  
+  .button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.7);
+    animation: glow 1.5s ease-in-out infinite;
+  }
+  
+  .button:hover .text {
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  .button:hover .liquid {
+    top: -120px;
+  }
+  
+  .button:active {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scale(0.98);
+  }
+  
+  .bubble {
+    position: absolute;
+    bottom: -20px;
+    border-radius: 50%;
+    opacity: 0;
+    animation: rise var(--rise-duration) ease-in infinite var(--rise-delay);
+  }
+  
+  .bubble::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(
+      circle at 75% 25%,
+      rgba(255, 255, 255, 0.6) 5%,
+      rgba(255, 255, 255, 0.2) 40%,
+      rgba(255, 255, 255, 0) 60%
+    );
+    border-radius: 50%;
+  }
+  
+  .bubble:nth-child(1) {
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    --rise-duration: 4s;
+    --rise-delay: 0s;
+  }
+  .bubble:nth-child(2) {
+    left: 25%;
+    width: 15px;
+    height: 15px;
+    --rise-duration: 3.5s;
+    --rise-delay: 0.5s;
+  }
+  .bubble:nth-child(3) {
+    left: 40%;
+    width: 10px;
+    height: 10px;
+    --rise-duration: 3s;
+    --rise-delay: 1s;
+  }
+  .bubble:nth-child(4) {
+    left: 55%;
+    width: 22px;
+    height: 22px;
+    --rise-duration: 4.5s;
+    --rise-delay: 1.5s;
+  }
+  .bubble:nth-child(5) {
+    left: 70%;
+    width: 18px;
+    height: 18px;
+    --rise-duration: 3.8s;
+    --rise-delay: 2s;
+  }
+  .bubble:nth-child(6) {
+    left: 85%;
+    width: 12px;
+    height: 12px;
+    --rise-duration: 3.2s;
+    --rise-delay: 2.5s;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+      transform: translate(-50%, -75%) rotate(360deg);
+    }
+  }
+  
+  @keyframes rise {
+    0% {
+      bottom: -20px;
+      opacity: 0;
+    }
+    5% {
+      opacity: 0.8;
+    }
+    95% {
+      opacity: 0.8;
+    }
+    100% {
+      bottom: 120%;
+      opacity: 0;
+    }
+  }
+  
+  @keyframes glow {
+    0%,
+    100% {
+      box-shadow: 0 0 5px rgba(76, 175, 80, 0.7);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(76, 175, 80, 0.9);
+    }
+  }
+  
