@@ -1,45 +1,20 @@
-import { NextAuthOptions } from "next-auth";
-import CredentialsProvider  from "next-auth/providers/credentials";
-import bcrypt from 'bcryptjs';
+import NextAuth from "next-auth";
+import GoogleProvider from "next-auth/providers/google";
+import FacebookProvider from "next-auth/providers/facebook";
 
+export const authOptions = {
+  providers: [
+    GoogleProvider({
+      clientId: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
+    }),
+    FacebookProvider({
+      clientId: process.env.FACEBOOK_CLIENT_ID,
+      clientSecret: process.env.FACEBOOK_CLIENT_SECRET,
+    }),
+  ],
+};
 
-export const  AuthOptions:NextAuthOptions = {
+const handler = NextAuth(authOptions);
 
-    
-    providers:[
-
-CredentialsProvider({
-
-id:"credentials",
-name:"Credentials",
-
-credentials:{
-    email:{label:"Email", type:"email", placeholder:"Jsmith@gmail.com"},
-    password:{label:"Password", type:"password"}
-},
-async authorize(credentials:any):Promise<any>{
-
-    const user = 
-                    {
-                        email:"admin3214@gmail.com",
-                        password:"1234"
-                    }
-
-
-try
-{
-console.log('This is authenticaation')
-
-}
-
-catch(error){
-    throw new Error(`Error in Authorize : ${error}`);
-}
-
-})
-
-
-
-    ]
-}
-
+export { handler as GET, handler as POST };  // Ensures both GET and POST are handled

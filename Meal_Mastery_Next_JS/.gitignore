@@ -5,6 +5,7 @@
 /.pnp
 .pnp.js
 .yarn/install-state.gz
+unsloth.Q8_0.gguf
 
 # testing
 /coverage

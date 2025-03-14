@@ -1,10 +1,12 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, Response
 from PIL import Image
 from flask_cors import CORS
 import torch
 from transformers import GPT2Tokenizer, GPT2LMHeadModel, AutoImageProcessor, AutoModelForImageClassification
 from inference_sdk import InferenceHTTPClient
 import torchvision.transforms as transforms
+from llama_cpp import Llama
+
 
 app = Flask(__name__)
 CORS(app)
@@ -15,6 +17,20 @@ CLIENT = InferenceHTTPClient(
     api_key="UAEhJTTEiYuSU7uPrBFN"
 )
 
+def load_model():
+    global llm
+    try:
+        # Utilize GPU by setting n_gpu_layers to a positive number
+        llm = Llama(model_path=r"../unsloth.Q8_0.gguf", n_ctx=512, n_batch=32, n_gpu_layers=20)
+        print("Model loaded successfully with GPU acceleration.")
+    except Exception as e:
+        print(f"Error loading model: {e}")
+        llm = None
+
+load_model()
+
+
+
 # Model paths for both image classification and recipe generation
 image_model_path = "illusion002/food-image-classification"
 recipe_model_path = "Shresthadev403/controlled-food-recipe-generation"
@@ -23,57 +39,36 @@ recipe_model_path = "Shresthadev403/controlled-food-recipe-generation"
 processor = AutoImageProcessor.from_pretrained(image_model_path)
 image_model = AutoModelForImageClassification.from_pretrained(image_model_path)
 
-# Load pre-trained GPT-2 model for recipe generation
-recipe_tokenizer = GPT2Tokenizer.from_pretrained(recipe_model_path)
-recipe_model = GPT2LMHeadModel.from_pretrained(recipe_model_path)
-
-# Add special tokens
-special_tokens = ['<RECIPE_END>', '<INPUT_START>', '<INSTR_START>', '<NEXT_INPUT>', '<INGR_START>', '<NEXT_INGR>', '<NEXT_INSTR>', '<TITLE_START>']
-recipe_tokenizer.add_special_tokens({'additional_special_tokens': special_tokens})
-recipe_model.resize_token_embeddings(len(recipe_tokenizer))
-
-# Define End-of-Sequence token
-custom_eos_token_id = recipe_tokenizer.encode('<RECIPE_END>', add_special_tokens=False)[0]
-recipe_model.config.eos_token_id = custom_eos_token_id
 
 
-def convert_tokens_to_string(tokens):
-    if not tokens:
-        return ""
-    cleaned_tokens = [token for token in tokens if token is not None and token not in recipe_tokenizer.all_special_ids]
-    return recipe_tokenizer.decode(cleaned_tokens, skip_special_tokens=True) if cleaned_tokens else ""
 
+@app.route('/chat', methods=['POST'])
+def chat():
+    user_input = request.json.get("message", "").strip()
+    if not user_input:
+        return Response("Please enter a message.", mimetype='text/plain')
 
-def generate_text(prompt):
-    recipe_model.eval()
-    input_ids = recipe_tokenizer.encode(prompt, return_tensors='pt')
-    attention_mask = torch.ones_like(input_ids)
-    
-    output = recipe_model.generate(
-        input_ids=input_ids,
-        attention_mask=attention_mask,
-        max_length=500,
-        num_return_sequences=1,
-        eos_token_id=custom_eos_token_id
-    )
-    
-    generated_text = recipe_tokenizer.decode(output[0], skip_special_tokens=True)
-    for token in special_tokens:
-        generated_text = generated_text.replace(token, '\n')
-    
-    return generated_text.strip()
+    # Adjust the system prompt based on the input format (dish name or ingredients)
+    system_prompt = "You are a cooking assistant. If the user provides a dish name, give the detailed recipe beginning. If the user provides ingredients, suggest possible recipes using those ingredients."
+    full_prompt = f"{system_prompt}\nUser: {user_input}\nAssistant:"
 
+    def generate_response():
+        try:
+            max_tokens = 256 - len(full_prompt.split())  # Adjust max tokens dynamically
+            for chunk in llm(
+                full_prompt,
+                stop=["User:", "Assistant:"],  # Define clear stop sequences
+                stream=True,
+                max_tokens=max_tokens,
+                temperature=0.9,   # Control randomness
+                top_p=0.9,         # Control diversity
+                repeat_penalty=1.2 # Discourage repetition
+            ):
+                yield chunk['choices'][0]['text']
+        except Exception as e:
+            yield f"Error generating response: {str(e)}"
 
-@app.route('/generate_recipe', methods=['POST'])
-def generate_recipe():
-    data = request.json
-    prompt = data.get('dishName', '').strip()
-    if not prompt:
-        return jsonify({'error': 'Dish name is required'}), 400
-    
-    print(f"Generating recipe for: {prompt}")
-    generated_text = generate_text(prompt)
-    return jsonify({'generated_text': generated_text})
+    return Response(generate_response(), mimetype='text/plain')
 
 
 @app.route('/classify', methods=['POST'])
@@ -103,7 +98,6 @@ def classify_image():
     except Exception as e:
         return jsonify({'error': f'Failed to process image: {str(e)}'}), 500
 
-
 def preprocess_image(image):
     transform = transforms.Compose([
         transforms.Resize((224, 224)),
@@ -112,7 +106,6 @@ def preprocess_image(image):
         transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
     ])
     return transform(image)
-
 
 @app.route('/detect_ingredients', methods=['POST'])
 def detect_ingredients():
@@ -131,6 +124,8 @@ def detect_ingredients():
         return jsonify({'ingredients': result})
     except Exception as e:
         return jsonify({'error': f'Ingredient detection failed: {str(e)}'}), 500
+
+
 
 
 if __name__ == '__main__':

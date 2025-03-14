@@ -28,7 +28,7 @@ export const Header=()=>{
                 <div class="hidden lg:flex lg:items-center lg:space-x-10">
                     <a href="/" title="" class="text-base font-medium text-white"> Home </a>
 
-                    <a href="/chatbot" title="" class="text-base font-medium text-white"> Chatbot </a>
+                 
 
                     <a href="#" title="" class="text-base font-medium text-white"> Resources </a>
 

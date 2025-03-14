@@ -2,9 +2,8 @@
 import { useState } from 'react';
 import { Header } from '../../components/Header';
 import { Chatbot } from '../../components/Chatbot';
-import ThemeToggle from '@/components/Toogle';
-import IngredientChatbot from '@/components/Ingredients';
-import Footer from '@/components/Footer';
+import IngredientChatbot from '../../components/Ingredients';
+import Footer from '../../components/Footer';
 
 const Chat = () => {
     const [activeChatbot, setActiveChatbot] = useState('chatbot1');
