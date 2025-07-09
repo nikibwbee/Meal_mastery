@@ -1,0 +1,1315 @@
+[
+  {
+    "name": "Kadhi",
+    "cuisine": "Indian",
+    "prep_time": "15 mins",
+    "cook_time": "20 mins",
+    "servings": "4",
+    "ingredients": [
+      "lentils",
+      "green chili",
+      "coriander",
+      "ginger",
+      "cheese",
+      "rice"
+    ],
+    "steps": [
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Simmer until the dish reaches desired consistency.",
+      "Garnish with fresh herbs before serving.",
+      "Chop all vegetables finely.",
+      "Add spices and saut\u00e9 until aromatic."
+    ]
+  },
+  {
+    "name": "Samay Baji",
+    "cuisine": "Nepali",
+    "prep_time": "13 mins",
+    "cook_time": "23 mins",
+    "servings": "2",
+    "ingredients": [
+      "yogurt",
+      "oil",
+      "tomatoes",
+      "lentils",
+      "pepper",
+      "flour",
+      "turmeric",
+      "onions",
+      "garlic"
+    ],
+    "steps": [
+      "Garnish with fresh herbs before serving.",
+      "Chop all vegetables finely.",
+      "Serve hot with rice or bread.",
+      "Simmer until the dish reaches desired consistency.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Add spices and saut\u00e9 until aromatic."
+    ]
+  },
+  {
+    "name": "Masoor Dal",
+    "cuisine": "Indian",
+    "prep_time": "16 mins",
+    "cook_time": "33 mins",
+    "servings": "5",
+    "ingredients": [
+      "chicken",
+      "ginger",
+      "turmeric",
+      "tomatoes",
+      "cumin",
+      "coriander"
+    ],
+    "steps": [
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Heat oil in a pan over medium heat.",
+      "Serve hot with rice or bread.",
+      "Chop all vegetables finely.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Garnish with fresh herbs before serving."
+    ]
+  },
+  {
+    "name": "Aloo Tama",
+    "cuisine": "Nepali",
+    "prep_time": "27 mins",
+    "cook_time": "45 mins",
+    "servings": "2",
+    "ingredients": [
+      "rice",
+      "paneer",
+      "yogurt",
+      "lentils",
+      "cream",
+      "spinach",
+      "flour"
+    ],
+    "steps": [
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Chop all vegetables finely.",
+      "Heat oil in a pan over medium heat.",
+      "Simmer until the dish reaches desired consistency.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Garnish with fresh herbs before serving."
+    ]
+  },
+  {
+    "name": "Kimchi",
+    "cuisine": "Global",
+    "prep_time": "18 mins",
+    "cook_time": "37 mins",
+    "servings": "6",
+    "ingredients": [
+      "cream",
+      "salt",
+      "ghee",
+      "oil",
+      "onions",
+      "green chili",
+      "chicken",
+      "potatoes"
+    ],
+    "steps": [
+      "Heat oil in a pan over medium heat.",
+      "Chop all vegetables finely.",
+      "Serve hot with rice or bread.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Garnish with fresh herbs before serving.",
+      "Simmer until the dish reaches desired consistency."
+    ]
+  },
+  {
+    "name": "Yomari",
+    "cuisine": "Nepali",
+    "prep_time": "19 mins",
+    "cook_time": "39 mins",
+    "servings": "2",
+    "ingredients": [
+      "tomatoes",
+      "ginger",
+      "coriander",
+      "green chili",
+      "turmeric",
+      "lentils",
+      "salt",
+      "cheese",
+      "cumin",
+      "yogurt"
+    ],
+    "steps": [
+      "Serve hot with rice or bread.",
+      "Chop all vegetables finely.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Heat oil in a pan over medium heat.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Garnish with fresh herbs before serving."
+    ]
+  },
+  {
+    "name": "Bara",
+    "cuisine": "Nepali",
+    "prep_time": "30 mins",
+    "cook_time": "21 mins",
+    "servings": "6",
+    "ingredients": [
+      "paneer",
+      "pepper",
+      "flour",
+      "tomatoes",
+      "garlic",
+      "cumin",
+      "onions",
+      "potatoes",
+      "cream",
+      "green chili"
+    ],
+    "steps": [
+      "Heat oil in a pan over medium heat.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Chop all vegetables finely.",
+      "Serve hot with rice or bread.",
+      "Garnish with fresh herbs before serving."
+    ]
+  },
+  {
+    "name": "Paneer Tikka",
+    "cuisine": "Indian",
+    "prep_time": "25 mins",
+    "cook_time": "18 mins",
+    "servings": "4",
+    "ingredients": [
+      "salt",
+      "flour",
+      "onions",
+      "mustard seeds",
+      "garlic",
+      "yogurt",
+      "tomatoes"
+    ],
+    "steps": [
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Simmer until the dish reaches desired consistency.",
+      "Chop all vegetables finely.",
+      "Serve hot with rice or bread."
+    ]
+  },
+  {
+    "name": "Burger",
+    "cuisine": "Global",
+    "prep_time": "18 mins",
+    "cook_time": "15 mins",
+    "servings": "4",
+    "ingredients": [
+      "green chili",
+      "flour",
+      "chicken",
+      "oil",
+      "pepper",
+      "potatoes",
+      "ginger",
+      "mustard seeds",
+      "turmeric",
+      "coriander"
+    ],
+    "steps": [
+      "Garnish with fresh herbs before serving.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Heat oil in a pan over medium heat.",
+      "Add spices and saut\u00e9 until aromatic."
+    ]
+  },
+  {
+    "name": "Falafel",
+    "cuisine": "Global",
+    "prep_time": "25 mins",
+    "cook_time": "32 mins",
+    "servings": "6",
+    "ingredients": [
+      "turmeric",
+      "lentils",
+      "cheese",
+      "rice",
+      "potatoes",
+      "chicken",
+      "oil",
+      "green chili"
+    ],
+    "steps": [
+      "Garnish with fresh herbs before serving.",
+      "Simmer until the dish reaches desired consistency.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Serve hot with rice or bread.",
+      "Heat oil in a pan over medium heat.",
+      "Add spices and saut\u00e9 until aromatic."
+    ]
+  },
+  {
+    "name": "Rajma",
+    "cuisine": "Indian",
+    "prep_time": "21 mins",
+    "cook_time": "26 mins",
+    "servings": "3",
+    "ingredients": [
+      "pepper",
+      "tomatoes",
+      "cheese",
+      "lentils",
+      "oil",
+      "green chili"
+    ],
+    "steps": [
+      "Garnish with fresh herbs before serving.",
+      "Heat oil in a pan over medium heat.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Serve hot with rice or bread.",
+      "Simmer until the dish reaches desired consistency.",
+      "Chop all vegetables finely."
+    ]
+  },
+  {
+    "name": "Vada Pav",
+    "cuisine": "Indian",
+    "prep_time": "26 mins",
+    "cook_time": "40 mins",
+    "servings": "6",
+    "ingredients": [
+      "rice",
+      "chicken",
+      "turmeric",
+      "lentils",
+      "coriander",
+      "tomatoes",
+      "mustard seeds",
+      "potatoes",
+      "flour",
+      "salt"
+    ],
+    "steps": [
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Chop all vegetables finely.",
+      "Heat oil in a pan over medium heat.",
+      "Serve hot with rice or bread.",
+      "Simmer until the dish reaches desired consistency.",
+      "Add spices and saut\u00e9 until aromatic."
+    ]
+  },
+  {
+    "name": "Laphing",
+    "cuisine": "Nepali",
+    "prep_time": "27 mins",
+    "cook_time": "17 mins",
+    "servings": "6",
+    "ingredients": [
+      "coriander",
+      "cheese",
+      "turmeric",
+      "garlic",
+      "lentils",
+      "salt",
+      "spinach",
+      "pepper",
+      "cumin",
+      "potatoes"
+    ],
+    "steps": [
+      "Heat oil in a pan over medium heat.",
+      "Garnish with fresh herbs before serving.",
+      "Serve hot with rice or bread.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Chop all vegetables finely.",
+      "Simmer until the dish reaches desired consistency."
+    ]
+  },
+  {
+    "name": "Chole Bhature",
+    "cuisine": "Indian",
+    "prep_time": "11 mins",
+    "cook_time": "26 mins",
+    "servings": "5",
+    "ingredients": [
+      "potatoes",
+      "green chili",
+      "pepper",
+      "oil",
+      "ghee",
+      "paneer",
+      "cumin",
+      "salt",
+      "spinach",
+      "turmeric"
+    ],
+    "steps": [
+      "Simmer until the dish reaches desired consistency.",
+      "Garnish with fresh herbs before serving.",
+      "Chop all vegetables finely.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Heat oil in a pan over medium heat."
+    ]
+  },
+  {
+    "name": "Sel Roti",
+    "cuisine": "Nepali",
+    "prep_time": "13 mins",
+    "cook_time": "45 mins",
+    "servings": "3",
+    "ingredients": [
+      "flour",
+      "rice",
+      "potatoes",
+      "onions",
+      "tomatoes",
+      "pepper",
+      "cumin",
+      "salt"
+    ],
+    "steps": [
+      "Add spices and saut\u00e9 until aromatic.",
+      "Heat oil in a pan over medium heat.",
+      "Chop all vegetables finely.",
+      "Simmer until the dish reaches desired consistency."
+    ]
+  },
+  {
+    "name": "Kwati",
+    "cuisine": "Nepali",
+    "prep_time": "29 mins",
+    "cook_time": "25 mins",
+    "servings": "4",
+    "ingredients": [
+      "paneer",
+      "turmeric",
+      "lentils",
+      "cumin",
+      "onions",
+      "flour",
+      "salt",
+      "rice"
+    ],
+    "steps": [
+      "Garnish with fresh herbs before serving.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Heat oil in a pan over medium heat.",
+      "Serve hot with rice or bread.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes."
+    ]
+  },
+  {
+    "name": "Paella",
+    "cuisine": "Global",
+    "prep_time": "10 mins",
+    "cook_time": "45 mins",
+    "servings": "5",
+    "ingredients": [
+      "ghee",
+      "mustard seeds",
+      "rice",
+      "cream",
+      "cumin",
+      "green chili",
+      "turmeric",
+      "potatoes",
+      "cheese",
+      "ginger"
+    ],
+    "steps": [
+      "Serve hot with rice or bread.",
+      "Chop all vegetables finely.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Simmer until the dish reaches desired consistency.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Heat oil in a pan over medium heat."
+    ]
+  },
+  {
+    "name": "Upma",
+    "cuisine": "Indian",
+    "prep_time": "13 mins",
+    "cook_time": "25 mins",
+    "servings": "4",
+    "ingredients": [
+      "flour",
+      "ginger",
+      "rice",
+      "onions",
+      "paneer",
+      "potatoes"
+    ],
+    "steps": [
+      "Heat oil in a pan over medium heat.",
+      "Chop all vegetables finely.",
+      "Simmer until the dish reaches desired consistency.",
+      "Serve hot with rice or bread.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Garnish with fresh herbs before serving."
+    ]
+  },
+  {
+    "name": "Peking Duck",
+    "cuisine": "Global",
+    "prep_time": "17 mins",
+    "cook_time": "36 mins",
+    "servings": "3",
+    "ingredients": [
+      "rice",
+      "lentils",
+      "turmeric",
+      "pepper",
+      "salt",
+      "ghee",
+      "oil",
+      "mustard seeds",
+      "ginger",
+      "cumin"
+    ],
+    "steps": [
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Simmer until the dish reaches desired consistency.",
+      "Garnish with fresh herbs before serving.",
+      "Chop all vegetables finely."
+    ]
+  },
+  {
+    "name": "Tacos",
+    "cuisine": "Global",
+    "prep_time": "26 mins",
+    "cook_time": "26 mins",
+    "servings": "5",
+    "ingredients": [
+      "pepper",
+      "garlic",
+      "onions",
+      "cream",
+      "tomatoes",
+      "mustard seeds",
+      "paneer"
+    ],
+    "steps": [
+      "Simmer until the dish reaches desired consistency.",
+      "Garnish with fresh herbs before serving.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Chop all vegetables finely."
+    ]
+  },
+  {
+    "name": "Bibimbap",
+    "cuisine": "Global",
+    "prep_time": "12 mins",
+    "cook_time": "19 mins",
+    "servings": "4",
+    "ingredients": [
+      "chicken",
+      "paneer",
+      "pepper",
+      "cumin",
+      "turmeric",
+      "potatoes"
+    ],
+    "steps": [
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Garnish with fresh herbs before serving.",
+      "Simmer until the dish reaches desired consistency.",
+      "Chop all vegetables finely.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Serve hot with rice or bread."
+    ]
+  },
+  {
+    "name": "Malai Kofta",
+    "cuisine": "Indian",
+    "prep_time": "21 mins",
+    "cook_time": "22 mins",
+    "servings": "6",
+    "ingredients": [
+      "ghee",
+      "mustard seeds",
+      "rice",
+      "paneer",
+      "lentils",
+      "spinach"
+    ],
+    "steps": [
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Heat oil in a pan over medium heat.",
+      "Chop all vegetables finely.",
+      "Garnish with fresh herbs before serving."
+    ]
+  },
+  {
+    "name": "Shawarma",
+    "cuisine": "Global",
+    "prep_time": "22 mins",
+    "cook_time": "35 mins",
+    "servings": "6",
+    "ingredients": [
+      "potatoes",
+      "yogurt",
+      "onions",
+      "coriander",
+      "green chili",
+      "rice",
+      "cream",
+      "paneer",
+      "pepper",
+      "salt"
+    ],
+    "steps": [
+      "Serve hot with rice or bread.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Chop all vegetables finely.",
+      "Heat oil in a pan over medium heat."
+    ]
+  },
+  {
+    "name": "Croissant",
+    "cuisine": "Global",
+    "prep_time": "27 mins",
+    "cook_time": "21 mins",
+    "servings": "2",
+    "ingredients": [
+      "mustard seeds",
+      "rice",
+      "garlic",
+      "paneer",
+      "coriander",
+      "spinach"
+    ],
+    "steps": [
+      "Add spices and saut\u00e9 until aromatic.",
+      "Heat oil in a pan over medium heat.",
+      "Serve hot with rice or bread.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Chop all vegetables finely."
+    ]
+  },
+  {
+    "name": "Momo",
+    "cuisine": "Nepali",
+    "prep_time": "24 mins",
+    "cook_time": "38 mins",
+    "servings": "6",
+    "ingredients": [
+      "onions",
+      "cumin",
+      "garlic",
+      "mustard seeds",
+      "coriander",
+      "paneer",
+      "cheese"
+    ],
+    "steps": [
+      "Chop all vegetables finely.",
+      "Heat oil in a pan over medium heat.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Simmer until the dish reaches desired consistency."
+    ]
+  },
+  {
+    "name": "Pav Bhaji",
+    "cuisine": "Indian",
+    "prep_time": "29 mins",
+    "cook_time": "44 mins",
+    "servings": "4",
+    "ingredients": [
+      "ghee",
+      "flour",
+      "rice",
+      "cumin",
+      "ginger",
+      "turmeric",
+      "spinach"
+    ],
+    "steps": [
+      "Garnish with fresh herbs before serving.",
+      "Heat oil in a pan over medium heat.",
+      "Simmer until the dish reaches desired consistency.",
+      "Serve hot with rice or bread.",
+      "Add spices and saut\u00e9 until aromatic."
+    ]
+  },
+  {
+    "name": "Baingan Bharta",
+    "cuisine": "Indian",
+    "prep_time": "18 mins",
+    "cook_time": "29 mins",
+    "servings": "5",
+    "ingredients": [
+      "lentils",
+      "green chili",
+      "pepper",
+      "yogurt",
+      "paneer",
+      "cheese",
+      "garlic",
+      "ghee",
+      "onions"
+    ],
+    "steps": [
+      "Chop all vegetables finely.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Simmer until the dish reaches desired consistency.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Heat oil in a pan over medium heat.",
+      "Serve hot with rice or bread."
+    ]
+  },
+  {
+    "name": "Biryani",
+    "cuisine": "Indian",
+    "prep_time": "23 mins",
+    "cook_time": "26 mins",
+    "servings": "5",
+    "ingredients": [
+      "flour",
+      "salt",
+      "oil",
+      "chicken",
+      "cheese",
+      "cumin",
+      "ginger"
+    ],
+    "steps": [
+      "Garnish with fresh herbs before serving.",
+      "Serve hot with rice or bread.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Simmer until the dish reaches desired consistency."
+    ]
+  },
+  {
+    "name": "Rogan Josh",
+    "cuisine": "Indian",
+    "prep_time": "11 mins",
+    "cook_time": "21 mins",
+    "servings": "3",
+    "ingredients": [
+      "potatoes",
+      "paneer",
+      "rice",
+      "spinach",
+      "garlic",
+      "ginger",
+      "chicken"
+    ],
+    "steps": [
+      "Chop all vegetables finely.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Garnish with fresh herbs before serving.",
+      "Simmer until the dish reaches desired consistency.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Serve hot with rice or bread."
+    ]
+  },
+  {
+    "name": "Korma",
+    "cuisine": "Indian",
+    "prep_time": "16 mins",
+    "cook_time": "32 mins",
+    "servings": "3",
+    "ingredients": [
+      "cream",
+      "garlic",
+      "ghee",
+      "mustard seeds",
+      "cumin",
+      "lentils",
+      "paneer",
+      "ginger",
+      "flour",
+      "green chili"
+    ],
+    "steps": [
+      "Heat oil in a pan over medium heat.",
+      "Garnish with fresh herbs before serving.",
+      "Chop all vegetables finely.",
+      "Simmer until the dish reaches desired consistency.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes."
+    ]
+  },
+  {
+    "name": "Chatamari",
+    "cuisine": "Nepali",
+    "prep_time": "29 mins",
+    "cook_time": "36 mins",
+    "servings": "5",
+    "ingredients": [
+      "salt",
+      "oil",
+      "cheese",
+      "chicken",
+      "cumin",
+      "lentils",
+      "yogurt",
+      "garlic",
+      "coriander",
+      "ghee"
+    ],
+    "steps": [
+      "Garnish with fresh herbs before serving.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Heat oil in a pan over medium heat.",
+      "Simmer until the dish reaches desired consistency.",
+      "Add spices and saut\u00e9 until aromatic."
+    ]
+  },
+  {
+    "name": "Fried Chicken",
+    "cuisine": "Global",
+    "prep_time": "22 mins",
+    "cook_time": "37 mins",
+    "servings": "4",
+    "ingredients": [
+      "spinach",
+      "turmeric",
+      "tomatoes",
+      "ghee",
+      "flour",
+      "potatoes",
+      "pepper",
+      "garlic",
+      "rice",
+      "yogurt"
+    ],
+    "steps": [
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Serve hot with rice or bread.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Simmer until the dish reaches desired consistency.",
+      "Garnish with fresh herbs before serving."
+    ]
+  },
+  {
+    "name": "Ceviche",
+    "cuisine": "Global",
+    "prep_time": "14 mins",
+    "cook_time": "24 mins",
+    "servings": "2",
+    "ingredients": [
+      "tomatoes",
+      "onions",
+      "cumin",
+      "paneer",
+      "yogurt",
+      "ginger",
+      "ghee",
+      "potatoes",
+      "salt",
+      "rice"
+    ],
+    "steps": [
+      "Garnish with fresh herbs before serving.",
+      "Simmer until the dish reaches desired consistency.",
+      "Chop all vegetables finely.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Serve hot with rice or bread.",
+      "Add spices and saut\u00e9 until aromatic."
+    ]
+  },
+  {
+    "name": "Juju Dhau",
+    "cuisine": "Nepali",
+    "prep_time": "24 mins",
+    "cook_time": "41 mins",
+    "servings": "5",
+    "ingredients": [
+      "mustard seeds",
+      "yogurt",
+      "oil",
+      "chicken",
+      "coriander",
+      "spinach",
+      "salt",
+      "cheese"
+    ],
+    "steps": [
+      "Heat oil in a pan over medium heat.",
+      "Serve hot with rice or bread.",
+      "Chop all vegetables finely.",
+      "Garnish with fresh herbs before serving.",
+      "Simmer until the dish reaches desired consistency.",
+      "Add spices and saut\u00e9 until aromatic."
+    ]
+  },
+  {
+    "name": "Palak Paneer",
+    "cuisine": "Indian",
+    "prep_time": "14 mins",
+    "cook_time": "17 mins",
+    "servings": "4",
+    "ingredients": [
+      "paneer",
+      "onions",
+      "rice",
+      "cheese",
+      "green chili",
+      "cream"
+    ],
+    "steps": [
+      "Add spices and saut\u00e9 until aromatic.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Chop all vegetables finely.",
+      "Serve hot with rice or bread.",
+      "Garnish with fresh herbs before serving."
+    ]
+  },
+  {
+    "name": "Ramen",
+    "cuisine": "Global",
+    "prep_time": "20 mins",
+    "cook_time": "23 mins",
+    "servings": "2",
+    "ingredients": [
+      "lentils",
+      "garlic",
+      "cheese",
+      "green chili",
+      "potatoes",
+      "ginger",
+      "paneer",
+      "spinach"
+    ],
+    "steps": [
+      "Serve hot with rice or bread.",
+      "Garnish with fresh herbs before serving.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Chop all vegetables finely."
+    ]
+  },
+  {
+    "name": "Dosa",
+    "cuisine": "Indian",
+    "prep_time": "29 mins",
+    "cook_time": "15 mins",
+    "servings": "5",
+    "ingredients": [
+      "yogurt",
+      "mustard seeds",
+      "flour",
+      "paneer",
+      "salt",
+      "onions",
+      "ghee",
+      "chicken"
+    ],
+    "steps": [
+      "Chop all vegetables finely.",
+      "Heat oil in a pan over medium heat.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Serve hot with rice or bread.",
+      "Garnish with fresh herbs before serving."
+    ]
+  },
+  {
+    "name": "Beef Stroganoff",
+    "cuisine": "Global",
+    "prep_time": "15 mins",
+    "cook_time": "30 mins",
+    "servings": "4",
+    "ingredients": [
+      "yogurt",
+      "lentils",
+      "onions",
+      "garlic",
+      "rice",
+      "ghee",
+      "flour"
+    ],
+    "steps": [
+      "Serve hot with rice or bread.",
+      "Chop all vegetables finely.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Heat oil in a pan over medium heat."
+    ]
+  },
+  {
+    "name": "Dal Bhat",
+    "cuisine": "Nepali",
+    "prep_time": "29 mins",
+    "cook_time": "35 mins",
+    "servings": "5",
+    "ingredients": [
+      "rice",
+      "onions",
+      "cream",
+      "pepper",
+      "potatoes",
+      "ghee",
+      "spinach"
+    ],
+    "steps": [
+      "Serve hot with rice or bread.",
+      "Heat oil in a pan over medium heat.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Garnish with fresh herbs before serving.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes."
+    ]
+  },
+  {
+    "name": "Pho",
+    "cuisine": "Global",
+    "prep_time": "29 mins",
+    "cook_time": "33 mins",
+    "servings": "6",
+    "ingredients": [
+      "spinach",
+      "green chili",
+      "cream",
+      "tomatoes",
+      "oil",
+      "yogurt",
+      "cheese",
+      "rice",
+      "lentils",
+      "turmeric"
+    ],
+    "steps": [
+      "Heat oil in a pan over medium heat.",
+      "Chop all vegetables finely.",
+      "Garnish with fresh herbs before serving.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Serve hot with rice or bread.",
+      "Add spices and saut\u00e9 until aromatic."
+    ]
+  },
+  {
+    "name": "Sushi",
+    "cuisine": "Global",
+    "prep_time": "10 mins",
+    "cook_time": "23 mins",
+    "servings": "3",
+    "ingredients": [
+      "lentils",
+      "cumin",
+      "potatoes",
+      "cheese",
+      "rice",
+      "chicken"
+    ],
+    "steps": [
+      "Serve hot with rice or bread.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Heat oil in a pan over medium heat.",
+      "Chop all vegetables finely."
+    ]
+  },
+  {
+    "name": "Gundruk",
+    "cuisine": "Nepali",
+    "prep_time": "17 mins",
+    "cook_time": "35 mins",
+    "servings": "4",
+    "ingredients": [
+      "cheese",
+      "potatoes",
+      "ghee",
+      "onions",
+      "cumin",
+      "lentils",
+      "flour",
+      "pepper",
+      "paneer",
+      "green chili"
+    ],
+    "steps": [
+      "Add spices and saut\u00e9 until aromatic.",
+      "Serve hot with rice or bread.",
+      "Garnish with fresh herbs before serving.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Heat oil in a pan over medium heat.",
+      "Chop all vegetables finely."
+    ]
+  },
+  {
+    "name": "Tandoori Chicken",
+    "cuisine": "Indian",
+    "prep_time": "22 mins",
+    "cook_time": "17 mins",
+    "servings": "4",
+    "ingredients": [
+      "spinach",
+      "coriander",
+      "pepper",
+      "flour",
+      "paneer",
+      "lentils",
+      "cumin",
+      "yogurt",
+      "chicken",
+      "salt"
+    ],
+    "steps": [
+      "Serve hot with rice or bread.",
+      "Garnish with fresh herbs before serving.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Heat oil in a pan over medium heat.",
+      "Add spices and saut\u00e9 until aromatic."
+    ]
+  },
+  {
+    "name": "Aloo Gobi",
+    "cuisine": "Indian",
+    "prep_time": "29 mins",
+    "cook_time": "30 mins",
+    "servings": "6",
+    "ingredients": [
+      "paneer",
+      "yogurt",
+      "pepper",
+      "green chili",
+      "flour",
+      "turmeric",
+      "ginger",
+      "potatoes"
+    ],
+    "steps": [
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Serve hot with rice or bread.",
+      "Heat oil in a pan over medium heat.",
+      "Simmer until the dish reaches desired consistency.",
+      "Garnish with fresh herbs before serving."
+    ]
+  },
+  {
+    "name": "Pizza",
+    "cuisine": "Global",
+    "prep_time": "27 mins",
+    "cook_time": "30 mins",
+    "servings": "6",
+    "ingredients": [
+      "onions",
+      "paneer",
+      "turmeric",
+      "coriander",
+      "cream",
+      "tomatoes",
+      "spinach",
+      "oil",
+      "ginger"
+    ],
+    "steps": [
+      "Simmer until the dish reaches desired consistency.",
+      "Heat oil in a pan over medium heat.",
+      "Serve hot with rice or bread.",
+      "Garnish with fresh herbs before serving."
+    ]
+  },
+  {
+    "name": "Choila",
+    "cuisine": "Nepali",
+    "prep_time": "13 mins",
+    "cook_time": "30 mins",
+    "servings": "5",
+    "ingredients": [
+      "garlic",
+      "salt",
+      "flour",
+      "turmeric",
+      "lentils",
+      "mustard seeds"
+    ],
+    "steps": [
+      "Serve hot with rice or bread.",
+      "Garnish with fresh herbs before serving.",
+      "Simmer until the dish reaches desired consistency.",
+      "Chop all vegetables finely."
+    ]
+  },
+  {
+    "name": "Moussaka",
+    "cuisine": "Global",
+    "prep_time": "30 mins",
+    "cook_time": "40 mins",
+    "servings": "3",
+    "ingredients": [
+      "onions",
+      "green chili",
+      "cheese",
+      "garlic",
+      "lentils",
+      "turmeric",
+      "paneer",
+      "ghee",
+      "coriander"
+    ],
+    "steps": [
+      "Add spices and saut\u00e9 until aromatic.",
+      "Serve hot with rice or bread.",
+      "Chop all vegetables finely.",
+      "Simmer until the dish reaches desired consistency.",
+      "Heat oil in a pan over medium heat."
+    ]
+  },
+  {
+    "name": "Butter Chicken",
+    "cuisine": "Indian",
+    "prep_time": "23 mins",
+    "cook_time": "34 mins",
+    "servings": "5",
+    "ingredients": [
+      "ghee",
+      "coriander",
+      "spinach",
+      "yogurt",
+      "oil",
+      "cumin",
+      "lentils",
+      "rice"
+    ],
+    "steps": [
+      "Simmer until the dish reaches desired consistency.",
+      "Serve hot with rice or bread.",
+      "Chop all vegetables finely.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Heat oil in a pan over medium heat."
+    ]
+  },
+  {
+    "name": "Samosa",
+    "cuisine": "Indian",
+    "prep_time": "18 mins",
+    "cook_time": "30 mins",
+    "servings": "4",
+    "ingredients": [
+      "ginger",
+      "turmeric",
+      "oil",
+      "rice",
+      "paneer",
+      "potatoes",
+      "mustard seeds",
+      "chicken",
+      "flour"
+    ],
+    "steps": [
+      "Serve hot with rice or bread.",
+      "Garnish with fresh herbs before serving.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Simmer until the dish reaches desired consistency.",
+      "Chop all vegetables finely."
+    ]
+  },
+  {
+    "name": "Spaghetti Bolognese",
+    "cuisine": "Global",
+    "prep_time": "28 mins",
+    "cook_time": "28 mins",
+    "servings": "4",
+    "ingredients": [
+      "ginger",
+      "cream",
+      "chicken",
+      "salt",
+      "cheese",
+      "rice",
+      "spinach"
+    ],
+    "steps": [
+      "Serve hot with rice or bread.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Heat oil in a pan over medium heat.",
+      "Simmer until the dish reaches desired consistency."
+    ]
+  },
+  {
+    "name": "Thukpa",
+    "cuisine": "Nepali",
+    "prep_time": "29 mins",
+    "cook_time": "37 mins",
+    "servings": "6",
+    "ingredients": [
+      "flour",
+      "coriander",
+      "cumin",
+      "salt",
+      "spinach",
+      "cream",
+      "turmeric"
+    ],
+    "steps": [
+      "Garnish with fresh herbs before serving.",
+      "Heat oil in a pan over medium heat.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Chop all vegetables finely.",
+      "Simmer until the dish reaches desired consistency.",
+      "Serve hot with rice or bread."
+    ]
+  },
+  {
+    "name": "Sekuwa",
+    "cuisine": "Nepali",
+    "prep_time": "16 mins",
+    "cook_time": "17 mins",
+    "servings": "3",
+    "ingredients": [
+      "oil",
+      "spinach",
+      "ginger",
+      "cream",
+      "yogurt",
+      "salt",
+      "chicken"
+    ],
+    "steps": [
+      "Add spices and saut\u00e9 until aromatic.",
+      "Serve hot with rice or bread.",
+      "Garnish with fresh herbs before serving.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Simmer until the dish reaches desired consistency.",
+      "Heat oil in a pan over medium heat."
+    ]
+  },
+  {
+    "name": "Shakshuka",
+    "cuisine": "Global",
+    "prep_time": "19 mins",
+    "cook_time": "33 mins",
+    "servings": "3",
+    "ingredients": [
+      "cream",
+      "lentils",
+      "tomatoes",
+      "salt",
+      "flour",
+      "oil",
+      "chicken",
+      "yogurt",
+      "garlic"
+    ],
+    "steps": [
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Simmer until the dish reaches desired consistency.",
+      "Serve hot with rice or bread.",
+      "Chop all vegetables finely.",
+      "Heat oil in a pan over medium heat."
+    ]
+  },
+  {
+    "name": "Goulash",
+    "cuisine": "Global",
+    "prep_time": "14 mins",
+    "cook_time": "19 mins",
+    "servings": "2",
+    "ingredients": [
+      "flour",
+      "onions",
+      "garlic",
+      "ginger",
+      "spinach",
+      "oil",
+      "ghee"
+    ],
+    "steps": [
+      "Garnish with fresh herbs before serving.",
+      "Add spices and saut\u00e9 until aromatic.",
+      "Heat oil in a pan over medium heat.",
+      "Chop all vegetables finely.",
+      "Mix in the main ingredients and cook for 10\u201315 minutes.",
+      "Simmer until the dish reaches desired consistency."
+    ]
+  }
+]

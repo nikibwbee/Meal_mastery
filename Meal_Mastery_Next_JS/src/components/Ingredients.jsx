@@ -5,7 +5,7 @@ export const IngredientChatbot = () => {
   const [message, setMessage] = useState('');
   const [chat, setChat] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
-  const chatContainerRef = useRef(null);  // Ref for scrolling
+  const chatContainerRef = useRef(null);
 
   useEffect(() => {
     if (chatContainerRef.current) {
@@ -16,23 +16,20 @@ export const IngredientChatbot = () => {
   const handleSubmit = async () => {
     if (message.trim()) {
       const userMessage = message;
-      setChat([...chat, { type: 'user', text: userMessage }]);
+      setChat(prev => [...prev, { type: 'user', text: userMessage }]);
       setMessage('');
-      setIsLoading(true);  // Set loading true before starting the request
-  
+      setIsLoading(true);
+
       setTimeout(() => {
-        const analyzingReply = 'Analyzing your food item...';
-        setChat((prevChat) => [...prevChat, { type: 'bot', text: analyzingReply }]);
-        generateRecipeFromFlask(userMessage);  // Call the function after showing analyzing message
+        setChat(prev => [...prev, { type: 'bot', text: 'Analyzing your food item...' }]);
+        generateRecipeFromFlask(userMessage);
       }, 1000);
     }
   };
 
   const generateRecipeFromFlask = async (dishName) => {
     try {
-      const prompt = `Give me a full detailed recipe on the basis of these ingredients :${dishName} `;
-
-      const response = await fetch('http://localhost:5000/chat', {
+      const response = await fetch('http://localhost:5050/chat', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: dishName }),
@@ -48,12 +45,11 @@ export const IngredientChatbot = () => {
         const { done, value } = await reader.read();
         if (done) break;
         botReply += decoder.decode(value, { stream: true });
-        setChat((prev) => [...prev.slice(0, -1), { type: 'bot', text: botReply }]);
+        setChat(prev => [...prev.slice(0, -1), { type: 'bot', text: botReply }]);
       }
-
     } catch (error) {
       console.error('Error:', error);
-      setChat((prev) => [...prev, { type: 'bot', text: '🚨 Error communicating with chatbot. Try again!' }]);
+      setChat(prev => [...prev, { type: 'bot', text: '🚨 Error communicating with chatbot. Try again!' }]);
     } finally {
       setIsLoading(false);
     }
@@ -61,76 +57,92 @@ export const IngredientChatbot = () => {
 
   const handleImageUpload = async (e) => {
     const file = e.target.files[0];
-    if (file) {
-      const reader = new FileReader();
-      reader.onloadend = async () => {
-        setChat([...chat, { 
-          type: 'user', 
-          text: <img src={reader.result} alt="uploaded" className="max-w-[300px] h-auto rounded-lg shadow-md" /> 
-        }]);
-        setIsLoading(true);
+    if (!file) return;
 
-        const formData = new FormData();
-        formData.append('image', file);
+    const reader = new FileReader();
+    reader.onloadend = async () => {
+      setChat(prev => [
+        ...prev,
+        {
+          type: 'user',
+          text: (
+            <img
+              src={reader.result}
+              alt="uploaded"
+              className="max-w-[300px] h-auto rounded-lg shadow-md"
+            />
+          ),
+        },
+      ]);
+      setIsLoading(true);
 
-        try {
-          const response = await fetch('http://localhost:5000/detect_ingredients', {
-            method: 'POST',
-            body: formData,
-          });
+      const formData = new FormData();
+      formData.append('image', file);
 
-          if (response.ok) {
-            const result = await response.json();
-            console.log(result);
-            console.log("Ingredients detected:", result.ingredients.predictions);
+      try {
+        const response = await fetch('http://localhost:5050/detect_ingredients', {
+          method: 'POST',
+          body: formData,
+        });
 
-            if (result.ingredients.predictions && result.ingredients.predictions.length > 0) {
-              const detectedIngredients = result.ingredients.predictions
-                .map(item => item.class)
-                .join(", ");
-
-              if (detectedIngredients) {
-                setMessage(detectedIngredients);
-
-                const botReply = `I found the following ingredient(s): ${detectedIngredients}`;
-                setChat((prevChat) => [...prevChat, { type: 'bot', text: botReply }]);
-              } else {
-                setChat((prevChat) => [...prevChat, { type: 'bot', text: "No ingredients detected in the image." }]);
-              }
-            } else {
-              setChat((prevChat) => [...prevChat, { type: 'bot', text: "No ingredients detected in the image." }]);
-            }
-          } else {
-            setChat((prevChat) => [...prevChat, { type: 'bot', text: "Sorry, something went wrong while detecting ingredients." }]);
-          }
+        if (!response.ok) {
+          setChat(prev => [...prev, { type: 'bot', text: "Sorry, something went wrong while detecting ingredients." }]);
           setIsLoading(false);
-        } catch (err) {
-          console.log("Error during ingredient detection:", err.message);
-          setChat((prevChat) => [...prevChat, { type: 'bot', text: "There was an error processing the image for ingredient detection." }]);
-          setIsLoading(false);
+          return;
         }
-      };
-      reader.readAsDataURL(file);
-    }
-  };
 
-  const handleKeyPress = (e) => {
-    if (e.key === 'Enter') {
-      handleSubmit();
-    }
+        const result = await response.json();
+        console.log("Detection result:", result);
+
+        if (result.message) {
+          setChat(prev => [...prev, { type: 'bot', text: result.message }]);
+        } else if (result.ingredients_detected || result.ingredients) {
+          const detectedIngredients = result.ingredients_detected || result.ingredients || [];
+          if (detectedIngredients.length > 0) {
+            const ingredientsText = detectedIngredients.join(", ");
+            setChat(prev => [...prev, { type: 'bot', text: `By using YOLO, I found the following ingredient(s): ${ingredientsText}` }]);
+
+            // 👉 Generate recipe using those ingredients
+            setTimeout(() => {
+              setChat(prev => [...prev, { type: 'bot', text: 'Generating recipe from ingredients...' }]);
+              generateRecipeFromFlask(ingredientsText);
+            }, 1000);
+          }
+        }
+
+        if (result.recipe) {
+          setTimeout(() => {
+            setChat(prev => [...prev, { type: 'bot', text: result.recipe }]);
+          }, 500);
+        } else if (result.text) {
+          setTimeout(() => {
+            setChat(prev => [...prev, { type: 'bot', text: result.text }]);
+          }, 500);
+        }
+
+      } catch (err) {
+        console.error("Error during ingredient detection:", err.message);
+        setChat(prev => [...prev, { type: 'bot', text: "There was an error processing the image for ingredient detection." }]);
+      } finally {
+        setIsLoading(false);
+      }
+    };
+    reader.readAsDataURL(file);
   };
 
   return (
     <div className='flex flex-col items-center mt-[40px] mb-[100px] mx-[10px] h-dvh'>
       <div className='border rounded-[12px] p-[10px] w-[80vw] max-w-[100vw] h-auto flex flex-col justify-between min-h-[440px] text-neutral-100'>
-        <div 
-          ref={chatContainerRef} 
+        <div
+          ref={chatContainerRef}
           className='flex flex-col gap-[10px] max-h-[400px] overflow-y-auto p-2 scrollbar-thin scrollbar-thumb-gray-400 scrollbar-track-gray-200'
         >
           {chat.map((entry, index) => (
             <div
               key={index}
-              className={`mb-[10px] p-[10px] rounded-[10px] max-w-[70%] ${entry.type === 'user' ? 'self-end bg-blue-500 text-white' : 'self-start bg-gray-200 text-black'}`}
+              className={`mb-[10px] p-[10px] rounded-[10px] max-w-[70%] ${
+                entry.type === 'user' ? 'self-end bg-blue-500 text-white' : 'self-start bg-gray-200 text-black'
+              }`}
             >
               {entry.text}
             </div>
@@ -163,7 +175,7 @@ export const IngredientChatbot = () => {
               Submit
             </button>
             <label className='border rounded-[10px] p-[10px] text-[14px] cursor-pointer'>
-              <img src="./upload.jpg" width={20} height={20} alt="" />
+              <img src="./upload.jpg" width={20} height={20} alt="upload icon" />
               <input type="file" onChange={handleImageUpload} className='hidden' />
             </label>
           </div>
